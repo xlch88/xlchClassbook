@@ -1,0 +1,10 @@
+<?php
+include_once("SysFunction/installLock.php");
+include_once("Config/Config.php");
+include_once("Fear/FuckTencent.php");
+include_once("Safe/Safe.php");
+include_once("SysFunction/function.php");
+include_once("Mysql/Mysql.php");
+include_once("User/User.php");
+include_once("Auth/Auth.php");
+include_once("User/Group.php");

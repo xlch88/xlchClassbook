@@ -1,0 +1,1 @@
+<?phpinclude("ErrorManager/ErrorManager.php");include("SysFunction/SysFunction.php");

@@ -1,0 +1,25 @@
+<?php
+if(isset($func)){
+	$NoPrintTime=true;
+	if(!$do){$do=$func;}
+	$FunctionDir=RootDir."Function/";
+	if(file_exists($FunctionDir."$func/$do.NoCore.php")){
+		$FuncFile=$FunctionDir."$func/$do.NoCore.php";
+		$NoCore=true;
+	}else{
+		if(file_exists($FunctionDir."$func/$do.php")){
+			$FuncFile=$FunctionDir."$func/$do.php";
+			$NoCore=false;
+		}else if(file_exists($FunctionDir."$func/$func.php")){
+			$FuncFile=$FunctionDir."$func/$func.php";
+			$NoCore=false;
+		}else{
+			SysInfo(array(
+				"Title"=>"XlchCore错误",
+				"Code"=>"50020",
+				"Info"=>"错误的func值",
+				"Text"=>"1.您输入了一个错误的func，导致系统无法处理",
+			));
+		}
+	}
+}

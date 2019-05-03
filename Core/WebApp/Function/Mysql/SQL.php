@@ -1,0 +1,2 @@
+<?php
+$SQL['Comment']='select xlch_comment.*,useri.Username as Username,useri.HeadUrl as HeadUrl,(CASE xlch_comment.Type WHEN 2 THEN (select xlch_user.Username from xlch_user where xlch_comment.To = xlch_user.ID) WHEN 3 THEN (select xlch_image_dir.Name from xlch_image_dir where xlch_comment.To = xlch_image_dir.ID) ELSE "" END) as ToName from xlch_comment left join xlch_user as useri on useri.ID = xlch_comment.UserId ${Where} order by AddDate desc';
