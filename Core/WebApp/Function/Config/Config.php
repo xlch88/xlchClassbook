@@ -29,7 +29,7 @@ class config{
 					else
 						$errorCallback();
 				}
-				$value = (isset($_COOKIE['zxf'.md5($varName).'wad']) ? array_merge($value,json_decode($_COOKIE['A'.md5($varName).'A'],true)) : $value);
+				//$value = (isset($_COOKIE['zxf'.md5($varName).'wad']) ? array_merge($value,json_decode($_COOKIE['A'.md5($varName).'A'],true)) : $value);
 			break;
 			
 			case 'json':
@@ -39,7 +39,7 @@ class config{
 					else
 						$errorCallback();
 				}
-				$value = (isset($_COOKIE['yjk'.md5($varName).'dfg']) ? array_merge($value,json_decode($_COOKIE['A'.md5($varName).'A'],true)) : $value);
+				//$value = (isset($_COOKIE['yjk'.md5($varName).'dfg']) ? array_merge($value,json_decode($_COOKIE['A'.md5($varName).'A'],true)) : $value);
 			break;
 		}
 		

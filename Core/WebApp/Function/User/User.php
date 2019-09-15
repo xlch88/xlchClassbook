@@ -12,7 +12,7 @@ if($_COOKIE['xlch_token']){ //如果Cookie不为空
 				//判断账号是不是被封禁
 				if($row['Status']==='On'){
 					//麻痹的终于登录成功了！
-					$UserInfo=array_merge($row,$_COOKIE);
+					//$UserInfo=array_merge($row,$_COOKIE);
 					$UserInfo['UserData']=json_decode($UserInfo['UserData'],true);
 				} else {
 					//封禁状态

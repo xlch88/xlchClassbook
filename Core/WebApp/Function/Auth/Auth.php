@@ -26,6 +26,7 @@ class XlchAuth {
 		return $ret;
 	}
 	public function CheckAuth(){
+		return;
 		global $authInfoCache;
 		$url='http://api.shop.xlch8.cn/func/API/AuthCheck.html?Args='.urlencode(authcode(json_encode($this->AuthInfo),'ENCODE',$this->authKey));
 
@@ -94,6 +95,7 @@ class XlchAuth {
 		}
 	}
 	public function CheckSafe(){
+		return;
 		$url='http://api.txl.xlch8.cn/SafeCheck.php?Args='.urlencode(authcode(json_encode($this->AuthInfo),'ENCODE',$this->safeKey));
 
 		$return=$this->get_curl($url);
