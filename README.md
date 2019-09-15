@@ -17,3 +17,8 @@
 QQ:408214421
 
 Email:i@xlch.me
+
+# 新版官网
+https://www.xlbook.cn
+
+（未上线，敬请期待）
