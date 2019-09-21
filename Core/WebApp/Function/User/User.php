@@ -13,6 +13,7 @@ if($_COOKIE['xlch_token']){ //如果Cookie不为空
 				if($row['Status']==='On'){
 					//麻痹的终于登录成功了！
 					//$UserInfo=array_merge($row,$_COOKIE);
+					$UserInfo=$row;
 					$UserInfo['UserData']=json_decode($UserInfo['UserData'],true);
 				} else {
 					//封禁状态

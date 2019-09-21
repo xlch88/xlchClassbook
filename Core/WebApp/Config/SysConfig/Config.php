@@ -48,7 +48,7 @@ return <<<FlandreStudio_JSON
             "domain": ""
         }
     },
-    "SysCode": "4211f4a87f1e325a0b1fc5fccec6450f",
+    "SysCode": "c57120d82b89c5cd1ac2121d7b9c6154",
     "FuckRobot": {
         "Comment": {
             "Open": true,
