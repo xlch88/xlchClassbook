@@ -12,13 +12,12 @@
  - 您没有权利制作该程序的任何衍生版本，我们也不接受任何该类请求。
  - 我们不推荐您在该源码上做出过大的修改，请期待2.0版本。我们将会在2.0版本原生支持插件、模板，以及丰富的接口。
  - 作者仍然保留版权等法律范围内允许的最大权利。
+ - This software now only supports Chinese. 
  
 # 联系作者
-QQ:408214421
-
-Email:i@xlch.me
+编写：QQ:408214421   Email:i@xlch.me
+策划：QQ:1991550400   Email:me@52huameng.com
 
 # 新版官网
 https://www.xlbook.cn
-
 （未上线，敬请期待）
