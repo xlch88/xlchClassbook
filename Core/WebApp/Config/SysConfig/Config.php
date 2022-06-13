@@ -20,15 +20,15 @@ return <<<FlandreStudio_JSON
         "Id": "902200569",
         "Auto": false,
         "Disabled": false,
-        "Player": 1,
+        "Player": 0,
         "BadApplePlayer": {
             "Key": "gcbs"
         }
     },
     "AdminInfo": {
-        "QQ": "408214421",
-        "WeChat": "xlchmz",
-        "Email": "me@qq-admin.cn"
+        "QQ": "787700998",
+        "WeChat": "ZeroDay9",
+        "Email": "dark495@moesys.cn"
     },
     "Group": {
         "QQ": "589697104",
@@ -48,7 +48,7 @@ return <<<FlandreStudio_JSON
             "domain": ""
         }
     },
-    "SysCode": "c57120d82b89c5cd1ac2121d7b9c6154",
+    "SysCode": "b312e668a2e60d14133da7259fbfd5cd",
     "FuckRobot": {
         "Comment": {
             "Open": true,

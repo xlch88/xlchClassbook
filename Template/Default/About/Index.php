@@ -76,9 +76,9 @@ if(!defined("AdminPHP")) exit('<h1 style="color:red">Bad Reuest!</h1> <hr /> Pow
 							</tr>
 							<tr>
 								<th scope="row">[程序编写] 绚丽彩虹</th>
-								<td><i class="fa fa-qq fa-fw"></i> 408214421 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=408214421&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:408214421:51" alt="点击这里给我发消息" title="点击这里给我发消息"></a></td>
-								<td><i class="fa fa-envelope fa-fw"></i> me@qq-admin.cn</td>
-								<td><i class="fa fa-link fa-fw"></i> <a href="http://xlch.me" target="_blank">Xlch.Me</a></td>
+								<td><i class="fa fa-qq fa-fw"></i> 787700998 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=787700998&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:787700998:51" alt="点击这里给我发消息" title="点击这里给我发消息"></a></td>
+								<td><i class="fa fa-envelope fa-fw"></i> dark495@moesys.cn</td>
+								<td><i class="fa fa-link fa-fw"></i> <a href="https://dark495.me" target="_blank">Dark495.me</a></td>
 							</tr>
 							<tr>
 								<th scope="row">[功能策划] 华梦流年</th>
@@ -160,12 +160,31 @@ if(!defined("AdminPHP")) exit('<h1 style="color:red">Bad Reuest!</h1> <hr /> Pow
 						<h2 class="ptb-title">开始公测</h2>
 					</div>
 				</div>
+				<div class="p-timeline">
+					<div class="pt-line c-gray text-right">
+						<span class="d-block">20??</span>
+						00/00
+					</div>
+					<div class="pt-body">
+						<h2 class="ptb-title">作者不知道干嘛去了</h2>
+					</div>
+				</div>
+				<div class="p-timeline">
+					<div class="pt-line c-gray text-right">
+						<span class="d-block">2022</span>
+						06/13
+					</div>
+					<div class="pt-body">
+						<h2 class="ptb-title">欸还有这么个项目嘛？<br/>那就更新一下吧...</h2>
+					</div>
+				</div>
 			</div>
 			<div class="col-md-6">
 				<div class="page-header">
 					<h1>更新日志</h1>
 				</div>
-				<iframe src="http://api.txl.xlch8.cn/Version.php" frameborder=0 style="min-height:500px;width:100%"></iframe>
+				<h1>_(:з)∠)_ 行了，网站挂了，暂时懒得修了...<br/><br/></h1>
+				<p>相关说明：<b><a href="https://github.com/xlch88/xlchClassbook/blob/master/README.md" target="_blank">https://github.com/xlch88/xlchClassbook/blob/master/README.md</a></b><br/><br/></p>
 			</div>
 		</div>
 	</div>

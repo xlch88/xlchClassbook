@@ -1,7 +1,7 @@
 <?php
 include_once("SysFunction/installLock.php");
 include_once("Config/Config.php");
-include_once("Fear/FuckTencent.php");
+//include_once("Fear/FuckTencent.php");
 include_once("Safe/Safe.php");
 include_once("SysFunction/function.php");
 include_once("Mysql/Mysql.php");

@@ -21,7 +21,7 @@ return <<<FlandreStudio_JSON
                 "Option": [
                     "汉子",
                     "妹子",
-                    "人妖"
+                    "TS/Other"
                 ]
             },
             {

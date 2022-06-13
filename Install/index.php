@@ -2,6 +2,8 @@
 error_reporting(0);
 header("Content-Type: text/html; charset=UTF-8");
 header("Powered-By: Xlch-AdminPHP");
+setcookie("xlch_token", '', time()-3600, '/');
+
 if(version_compare('5.4', PHP_VERSION, ">")) {
 	die('请使用PHP 5.4 或更高的版本运行本程序！<hr></hr>Powered By AdminPHP! (C) Flandre-Studio.cn');
 }
@@ -269,15 +271,15 @@ Xlch88;
 	}else{
 		Logg('创建管理员账户',2);
 		
-		if($_POST['Admin_Username'] == '何慧')
-			$DefaultUserData=include('hehui.php');
+		if($_POST['Admin_Username'] == '悦咚')
+			$DefaultUserData=include('yuedong.php');
 		else
 			$DefaultUserData=json_decode(include('../Core/WebApp/Config/SysConfig/DefaultUserData.php'),true);
 		
 		$sql='INSERT INTO `xlch_user` set
 			`Username`="'.addslashes($_POST['Admin_Username']).'" , 
 			`Password`="'.addslashes($_POST['Admin_Password']).'", 
-			`HeadUrl`="QQ:408214421",
+			`HeadUrl`="QQ:787700998",
 			`RegIP`="8.8.8.8", 
 			`RegCity`="火星", 
 			`Group`="Admin",
@@ -294,7 +296,7 @@ Xlch88;
 	$sqls = [
 		'xlch_image_dir'=>"INSERT INTO `xlch_image_dir` (`ID`, `Name`, `Bewrite`, `CreaterId`, `AnybodyUpload`, `AddDate`) VALUES ('1', '默认相册', '这个是系统内置的默认相册，您可以上传图片到这里，也可以在修改这个相册的信息。', '1', '1', now());",
 		'xlch_comment'=>"INSERT INTO `xlch_comment` (`ID`, `UserId`, `Type`, `To`, `Text`, `AddDate`) VALUES ('1', '1', '0', NULL, '欢迎各位同学！这是同学录的第一条留言，您可以在后台进行删除。', now());",
-		'xlch_image'=>"INSERT INTO `xlch_image` (`ID`, `DirId`, `Url`, `Name`, `UploadId`, `AddDate`) VALUES ('1', '1', 'https://q1.qlogo.cn/g?b=qq&nk=408214421&s=640', '绚丽彩虹', '1', now())"
+		'xlch_image'=>"INSERT INTO `xlch_image` (`ID`, `DirId`, `Url`, `Name`, `UploadId`, `AddDate`) VALUES ('1', '1', 'https://q1.qlogo.cn/g?b=qq&nk=787700998&s=640', '悦咚捏', '1', now())"
 	];
 	foreach($sqls as $table=>$sql){
 		if($Mysql->count('select count(1) from `'.$table.'`') == '0'){
@@ -377,9 +379,9 @@ include('../Core/AdminPHP/Config/SysConfig/Version.php');
 			<section id="main">
 				<aside id="sidebar" class="sidebar c-overflow">
 					<div class="s-profile">
-						<a href="#" data-ma-action="profile-menu-toggle" style="background: #ff8585;">
+						<a href="#" data-ma-action="profile-menu-toggle" style="background: #66ccff;">
 							<div class="sp-pic">
-								<img src="http://q1.qlogo.cn/g?b=qq&nk=408214421&s=100" alt="">
+								<img src="http://q1.qlogo.cn/g?b=qq&nk=787700998&s=100" alt="">
 							</div>
 							<div class="sp-info">
 								绚丽彩虹工作室 荣誉出品
@@ -388,7 +390,7 @@ include('../Core/AdminPHP/Config/SysConfig/Version.php');
 						</a>
 						<ul class="main-menu">
 							<li>
-								<a target="_blank" href="http://fland"><i class="fa fa-user"></i> 工作室首页</a>
+								<a target="_blank" href="http://flandre-studio.cn/"><i class="fa fa-user"></i> 工作室首页</a>
 							</li>
 							<li>
 								<a target="_blank" href="http://xlch.me"><i class="fa fa-user"></i> 绚丽博客</a>
@@ -459,7 +461,9 @@ include('../Core/AdminPHP/Config/SysConfig/Version.php');
 										<h2>更新日志 —— 当前版本:<?=$Version ?> (<?=$Version_?>)</h2>
 									</div>
 									<div class="card-body card-padding">
-										<iframe src="http://api.txl.xlch8.cn/Version.php" frameborder=0 style="min-height:300px;width:100%"></iframe>
+										<!--<iframe src="http://api.txl.xlch8.cn/Version.php" frameborder=0 style="min-height:300px;width:100%"></iframe>-->
+										<h1>_(:з)∠)_ 行了，网站挂了，暂时懒得修了...<br/><br/></h1>
+										<p>完全开源地址：<b><a href="https://github.com/xlch88/xlchClassbook" target="_blank">https://github.com/xlch88/xlchClassbook</a></b></p>
 									</div>
 								</div>
 								<?php break; ?>
@@ -469,7 +473,9 @@ include('../Core/AdminPHP/Config/SysConfig/Version.php');
 										<h2>使用协议</h2>
 									</div>
 									<div class="card-body card-padding">
-										<iframe src="http://doc.txl.xlch8.cn/Install.html" frameborder=0 style="min-height:500px;width:100%"></iframe>
+										<!--<iframe src="http://doc.txl.xlch8.cn/Install.html" frameborder=0 style="min-height:500px;width:100%"></iframe>-->
+										<h1>_(:з)∠)_ 行了，网站挂了，暂时懒得修了...<br/><br/></h1>
+										<p>相关说明：<b><a href="https://github.com/xlch88/xlchClassbook/blob/master/README.md" target="_blank">https://github.com/xlch88/xlchClassbook/blob/master/README.md</a></b><br/><br/></p>
 										<a href="?step=<?=($Step+1)?>" class="btn btn-block bgm-green">同意 →</a>
 									</div>
 								</div>
@@ -737,7 +743,7 @@ Xlch88;
 												<label for="Admin_Username" class="col-sm-2 control-label">管理员姓名</label>
 												<div class="col-sm-10">
 													<div class="fg-line">
-														<input type="text" class="form-control input-sm" required="required" name="Admin_Username" id="Admin_Username" value="何慧">
+														<input type="text" class="form-control input-sm" required="required" name="Admin_Username" id="Admin_Username" value="悦咚">
 													</div>
 												</div>
 											</div>

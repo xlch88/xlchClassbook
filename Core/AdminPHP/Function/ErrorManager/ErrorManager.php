@@ -78,7 +78,7 @@ function ErrorManager($Error){
 				<table>
 				<?php
 				foreach($trace as $row){
-					$arg=(string)str_replace(RootDir,'',implode("','",$row['args']));
+					$arg=(string)str_replace(RootDir,'',implode("','",$row['args'] ?? []));
 					$arg=htmlspecialchars($arg ? "'".$arg."'" : '%s');
 				?>
 				<tr>

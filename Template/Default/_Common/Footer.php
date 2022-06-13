@@ -10,8 +10,9 @@ if(!defined("AdminPHP")) exit('<h1 style="color:red">Bad Reuest!</h1> <hr /> Pow
 				Copyright &copy; <?=date('Y')?> 绚丽彩虹工作室 Flandre-Studio.cn
 				<ul class="f-menu">	
 					<!-- 绚丽彩虹同学录 友情链接 建议您不要去除  -->
-					<li><a target="_blank" href="http://flandre-studio.cn/">绚丽彩虹工作室</a></li>
-					<li><a target="_blank" href="http://xlch.me/">绚丽博客</a></li>
+					<!-- <li><a target="_blank" href="http://flandre-studio.cn/">绚丽彩虹工作室</a></li> -->
+					<!-- <li><a target="_blank" href="http://xlch.me/">绚丽博客</a></li> -->
+					<li><a target="_blank" href="https://github.com/xlch88/xlchClassbook"><i class="fa fa-github"></i> Github</a></li>
 				</ul>
 				
 				<!-- 绚丽彩虹同学录 用户使用情况统计 建议您不要去除 -->
@@ -26,33 +27,28 @@ if(!defined("AdminPHP")) exit('<h1 style="color:red">Bad Reuest!</h1> <hr /> Pow
 				</script>
 			</footer>
 		</section>
-		<script src="//lib.baomitu.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="//lib.baomitu.com/moment.js/2.18.1/moment.min.js"></script>	
+		
+		<script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/assets/vendor/moment/moment.min.js"></script>	
 		<script src="/assets/js/waves.min.js?v=<?=$Version_?>"></script>	
 		<script src="/assets/js/bootstrap-growl.min.js?v=<?=$Version_?>"></script>	
-		<script src="//lib.baomitu.com/limonte-sweetalert2/6.6.4/sweetalert2.min.js"></script>
+		<script src="/assets/vendor/sweetalert2/sweetalert2.min.js"></script>
 		<script src="/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>	
-		<script src="//lib.baomitu.com/lightgallery/1.3.9/js/lightgallery.js"></script>	
+		<script src="/assets/vendor/lightgallery/js/lightgallery.js"></script>	
 		<script src="/assets/js/bootstrap-datetimepicker.zh-CN.js?v=<?=$Version_?>"></script>	
-		<script src="//lib.baomitu.com/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>	
-		<script src="//lib.baomitu.com/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
-		<script src="//lib.baomitu.com/cropper/3.0.0-rc.1/cropper.min.js"></script>	
+		<script src="/assets/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>	
+		<script src="/assets/vendor/bootstrap-validator/js/bootstrapValidator.js"></script>
+		<script src="/assets/vendor/cropper/cropper.min.js"></script>	
 		<script src="/assets/js/webuploader.js?v=<?=$Version_?>"></script>			
 		<script src="/assets/kindeditor/kindeditor-min.js?v=<?=$Version_?>"></script>	
 		<script src="/assets/kindeditor/zh_CN.js?v=<?=$Version_?>"></script>	
-		<script src="//lib.baomitu.com/salvattore/1.0.9/salvattore.min.js"></script>	
+		<script src="/assets/vendor/salvattore/salvattore.min.js"></script>	
 		<script src="/assets/js/topinyin.js?v=<?=$Version_?>"></script>
 		<script src="/assets/js/jquery.emoji.min.js?v=<?=$Version_?>"></script>
 		<script src="/assets/js/app.min.js?v=<?=$Version_?>"></script>
-			
-		<!-- Placeholder for IE9 -->	
-		<!--[if IE 9 ]>			
-		<script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>	
-		<![endif]-->	
-		<!-- Pjax -->	
-
 		
-		<script src="//lib.baomitu.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>		
+		<!-- Pjax -->
+		<script src="/assets/vendor/jquery-pjax/jquery.pjax.min.js"></script>		
 		<script>
 		function regpjax() {
 			$(document).pjax('a[target!="_blank"][pjax!="no"][href!="#"]', '#main', {
@@ -93,12 +89,12 @@ if(!defined("AdminPHP")) exit('<h1 style="color:red">Bad Reuest!</h1> <hr /> Pow
 				dataType: 'script'
 			});
 			$.ajax({
-				url: '//lib.baomitu.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js',
+				url: '/assets/vendor/bootstrap/js/bootstrap.min.js',
 				cache: true,
 				dataType: 'script'
 			});
 			$.ajax({
-				url: '//lib.baomitu.com/salvattore/1.0.9/salvattore.min.js',
+				url: '/assets/vendor/salvattore/salvattore.min.js',
 				cache: true,
 				dataType: 'script'
 			});

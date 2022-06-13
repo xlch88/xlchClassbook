@@ -68,13 +68,14 @@ if(!is_file($Template_CommonPhp) && $mod != "Welcome"){
 		"Info"=>"页面[ $Template_CommonPhp ]不存在",
 	));
 }
-include($Template_Info);
-include($Template_Common);
-include($Template_Config);
-include($Template_Func);
+if(is_file($Template_Info))		include($Template_Info);
+if(is_file($Template_Common))	include($Template_Common);
+if(is_file($Template_Config))	include($Template_Config);
+if(is_file($Template_Func))		include($Template_Func);
 if($mod != "Welcome") $S=include($Template_CommonPhp);
 if(is_file($Template_Php) && $S) $S=include($Template_Php);
-define("Title",$WebConfig["Info"]["Title"].PageName);
+defined('PageName') or define('PageName', '');
+define("Title", ($WebConfig["Info"]["Title"] ?? '').PageName);
 if(!isset($RInfo)){
 	include($Template_Print);
 }else{

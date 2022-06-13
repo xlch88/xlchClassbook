@@ -5,7 +5,7 @@ return <<<FlandreStudio_JSON
     "Port": "3306",
     "Username": "root",
     "Password": "root",
-    "Database": "test",
+    "Database": "book",
     "QZ": "xlch"
 }
 FlandreStudio_JSON;

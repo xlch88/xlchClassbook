@@ -10,18 +10,18 @@ if(!defined("AdminPHP")) exit('<h1 style="color:red">Bad Reuest!</h1> <hr /> Pow
 		<meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 		<title><?=$WebConfig['Info']['WebName']?> | <?=PageName;?></title>
 		
-		<script src="//lib.baomitu.com/jquery/3.3.1/jquery.min.js"></script>
+		<script src="/assets/vendor/jquery/jquery.min.js"></script>
 		
 		<!-- Vendor CSS -->
-		<link href="//lib.baomitu.com/fullcalendar/3.4.0/fullcalendar.css" rel="stylesheet">
-		<link href="//lib.baomitu.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
-		<link href="//lib.baomitu.com/limonte-sweetalert2/6.6.4/sweetalert2.min.css" rel="stylesheet">
-		<link href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="/assets/vendor/fullcalendar/fullcalendar.css" rel="stylesheet">
+		<link href="/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+		<link href="/assets/vendor/sweetalert2/sweetalert2.min.css" rel="stylesheet">
+		<link href="/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 		<link href="/assets/css/jquery.mCustomScrollbar.min.css?v=<?=$Version_?>" rel="stylesheet">
-		<link href="//lib.baomitu.com/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
-		<link href="//lib.baomitu.com/lightgallery/1.3.9/css/lightgallery.min.css" rel="stylesheet">
-		<link href="//lib.baomitu.com/bootstrap-validator/0.5.3/css/bootstrapValidator.min.css" rel="stylesheet">
-		<link href="//lib.baomitu.com/cropper/3.0.0-rc.1/cropper.min.css" rel="stylesheet">
+		<link href="/assets/vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+		<link href="/assets/vendor/lightgallery/css/lightgallery.min.css" rel="stylesheet">
+		<link href="/assets/vendor/bootstrap-validator/css/bootstrapValidator.min.css" rel="stylesheet">
+		<link href="/assets/vendor/cropper/cropper.min.css" rel="stylesheet">
 		<link href="/assets/css/jquery.emoji.css?v=<?=$Version_?>" rel="stylesheet">
 		
 		<!-- CSS -->
@@ -112,7 +112,7 @@ if(!defined("AdminPHP")) exit('<h1 style="color:red">Bad Reuest!</h1> <hr /> Pow
 										<div class="lg-body">
 											<a class="list-group-item media" href="">
 												<div class="pull-left">
-													<img class="lgi-img" src="http://q1.qlogo.cn/g?b=qq&nk=408214421&s=640" alt="">
+													<img class="lgi-img" src="http://q1.qlogo.cn/g?b=qq&nk=787700998&s=640" alt="">
 												</div>
 												<div class="media-body">
 													<div class="lgi-heading">绚丽彩虹 评论了你的说说：</div>
@@ -192,6 +192,7 @@ if(!defined("AdminPHP")) exit('<h1 style="color:red">Bad Reuest!</h1> <hr /> Pow
 					<ul class="main-menu">
 						<?php
 						foreach($Sidebar as $i=>$row){
+							$continue=false;
 							foreach($row['Option'] as $row2){
 								$continue=false;
 								switch($row2){
@@ -201,6 +202,7 @@ if(!defined("AdminPHP")) exit('<h1 style="color:red">Bad Reuest!</h1> <hr /> Pow
 								}
 							}
 							if($continue) continue;
+							list($tmpMod,$tmpMod2,$tmpType) = ['', '', ''];
 							if($row['Type'] == 0)@list($tmpMod,$tmpMod2,$tmpType) = explode('/',$row['Url']);
 							?>
 							<li class="<?=($mod == $tmpMod ? 'active' : '')?>">

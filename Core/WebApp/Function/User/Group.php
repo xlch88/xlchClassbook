@@ -8,19 +8,19 @@ $TempMod2=(isset($func) ? $do : $mod2);
 function CheckPermission(){
 	global $UserGroup,$PermissionType,$TempMod,$Mod2Name,$TempMod2,$GroupInfo;
 	$CheckList = [
-		$UserGroup['Permission'][$PermissionType][$TempMod][$Mod2Name][$TempMod2],
-		$UserGroup['Permission'][$PermissionType][$TempMod][$Mod2Name]['All'],
-		$UserGroup['Permission'][$PermissionType][$TempMod]['Allow'],
-		$UserGroup['Permission'][$PermissionType]['All']['Allow'],
-		$UserGroup['Permission']['All']['Allow']
+		$UserGroup['Permission'][$PermissionType][$TempMod][$Mod2Name][$TempMod2] ?? null,
+		$UserGroup['Permission'][$PermissionType][$TempMod][$Mod2Name]['All'] ?? null,
+		$UserGroup['Permission'][$PermissionType][$TempMod]['Allow'] ?? null,
+		$UserGroup['Permission'][$PermissionType]['All']['Allow'] ?? null,
+		$UserGroup['Permission']['All']['Allow'] ?? null
 	];
 	if(isset($UserGroup['Include'])){
 		$CheckList = array_merge($CheckList,[
-			$GroupInfo[$UserGroup['Include']]['Permission'][$PermissionType][$TempMod][$Mod2Name][$TempMod2],
-			$GroupInfo[$UserGroup['Include']]['Permission'][$PermissionType][$TempMod][$Mod2Name]['All'],
-			$GroupInfo[$UserGroup['Include']]['Permission'][$PermissionType][$TempMod]['Allow'],
-			$GroupInfo[$UserGroup['Include']]['Permission'][$PermissionType]['All']['Allow'],
-			$GroupInfo[$UserGroup['Include']]['Permission']['All']['Allow']
+			$GroupInfo[$UserGroup['Include']]['Permission'][$PermissionType][$TempMod][$Mod2Name][$TempMod2] ?? null,
+			$GroupInfo[$UserGroup['Include']]['Permission'][$PermissionType][$TempMod][$Mod2Name]['All'] ?? null,
+			$GroupInfo[$UserGroup['Include']]['Permission'][$PermissionType][$TempMod]['Allow'] ?? null,
+			$GroupInfo[$UserGroup['Include']]['Permission'][$PermissionType]['All']['Allow'] ?? null,
+			$GroupInfo[$UserGroup['Include']]['Permission']['All']['Allow'] ?? null
 		]);
 	}
 	

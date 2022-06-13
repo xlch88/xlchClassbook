@@ -4,7 +4,7 @@
 // +----------------------------------------------------------------------
 // | Copyright (c) 2013~2017 http://www.qq-admin.cn All rights reserved.
 // +----------------------------------------------------------------------
-// | Author: 绚丽彩虹 <me@qq-admin.cn>
+// | Author: 绚丽彩虹 <me@qq-admin.cn> / 悦咚 <i@dark495.me>
 // +----------------------------------------------------------------------
 
 //设置框架目录
@@ -14,8 +14,8 @@ define("AdminPHPDir",RootDir."Core/AdminPHP/");
 header("Content-Type: text/html; charset=UTF-8");
 header("Powered-By: Xlch-AdminPHP");
 
-if(version_compare('5.4', PHP_VERSION, ">")) {
-	die('请使用PHP 5.4 或更高的版本运行本程序！<hr>Powered By AdminPHP! (C) Flandre-Studio.cn');
+if(version_compare('7.0', PHP_VERSION, ">")) {
+	die('请使用PHP 7.0 或更高的版本运行本程序！<hr>Powered By AdminPHP! (C) Flandre-Studio.cn');
 }
 
 //引入框架文件

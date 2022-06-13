@@ -1,5 +1,9 @@
 <?php
 if(!defined("AdminPHP")) exit('<h1 style="color:red">Bad Reuest!</h1> <hr /> Powered By Xlch-AdminPHP');
+$OnlyComment = $OnlyComment ?? false;
+$IsImg = $IsImg ?? false;
+$isCommentMe = $isCommentMe ?? false;
+$IsHr = $IsHr ?? false;
 ?>
 <?php if(!$OnlyComment){?>
 <div class="card">
@@ -18,7 +22,7 @@ if(!defined("AdminPHP")) exit('<h1 style="color:red">Bad Reuest!</h1> <hr /> Pow
 </div>
 <?php } ?>
 <!-- 留言列表 -->
-<?php foreach($CommentList as $row){ ?>
+<?php foreach($CommentList as $row){ $row['Comments'] = ($row['Comments'] ?? []) ?: []; ?>
 <div class="card">
 	<div class="card-header">
 		<div class="media">

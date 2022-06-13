@@ -1,3 +1,3 @@
 <?php
-$Version_=1004;
-$Version='1.4 公测版';
+$Version_=1005;
+$Version='1.5 修复版';

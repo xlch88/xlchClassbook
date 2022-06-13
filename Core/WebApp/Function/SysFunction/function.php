@@ -19,7 +19,7 @@ function get_ip_city($ip,$iscity=false){
 	}
 }
 function Gender($g){
-	$Gender = isset($GLOBALS['Gender']) ? $GLOBALS['Gender'] : ['<i class="fa fa-mars"></i> 汉子','<i class="fa fa-venus"></i> 妹子','<i class="fa fa-transgender"></i> 人妖'];
+	$Gender = isset($GLOBALS['Gender']) ? $GLOBALS['Gender'] : ['<i class="fa fa-mars"></i> 汉子','<i class="fa fa-venus"></i> 妹子','<i class="fa fa-transgender"></i> TS/Other'];
 	return ($Gender[$g] ? $Gender[$g] : '未填写性别');
 }
 function UserHead($HeadUrl,$r=false){
@@ -104,7 +104,7 @@ function authcode($string, $operation = 'DECODE', $key = '', $expiry = 0) {
 		$result .= chr(ord($string[$i]) ^ ($box[($box[$a] + $box[$j]) % 256]));
 	}
 	if($operation == 'DECODE') {
-		if((substr($result, 0, 10) == 0 || substr($result, 0, 10) - time() > 0) && substr($result, 10, 16) == substr(md5(substr($result, 26).$keyb), 0, 16)) {
+		if((@substr($result, 0, 10) == 0 || @substr($result, 0, 10) - time() > 0) && @substr($result, 10, 16) == @substr(md5(substr($result, 26).$keyb), 0, 16)) {
 			return substr($result, 26);
 		} else {
 			return '';
@@ -117,6 +117,7 @@ function rc4($pwd, $data) {
 
     $key[] = "";
     $box[] = "";
+	$cipher = '';
 
     $pwd_length = strlen($pwd);
     $data_length = strlen($data);
@@ -132,7 +133,7 @@ function rc4($pwd, $data) {
         $box[$i] = $box[$j];
         $box[$j] = $tmp;
     }
-
+	
     for ($a = $j = $i = 0; $i < $data_length; $i++) {
         $a = ($a + 1) % 256;
         $j = ($j + $box[$a]) % 256;
@@ -218,7 +219,7 @@ function get_curl($url, $post=0, $referer=0, $cookie=0, $header=0, $ua=0, $nobao
 
 
 function daddslashes($string, $force = 0, $strip = FALSE) {
-	!defined('MAGIC_QUOTES_GPC') && define('MAGIC_QUOTES_GPC', get_magic_quotes_gpc());
+	!defined('MAGIC_QUOTES_GPC') && define('MAGIC_QUOTES_GPC', false);
 	if(!MAGIC_QUOTES_GPC || $force) {
 		if(is_array($string)) {
 			foreach($string as $key => $val) {

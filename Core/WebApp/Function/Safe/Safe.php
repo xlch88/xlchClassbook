@@ -1,5 +1,5 @@
 <?php
-if($_COOKIE['DisableSafeCheck'])return;
+if($_COOKIE['DisableSafeCheck'] ?? '') return;
 //¼ì²âXSS
 function SafeArgs($pc = []){
 	foreach($_GET as $key=>$value) {
@@ -47,4 +47,4 @@ function SafeLog($method,$key,$value,$match){
 	file_put_contents(RootDir . '/SafeLog_cxc4v5df.json', json_encode($log)."\r\n", FILE_APPEND);
 	SafePage($log);
 }
-include('360webscan.php');
+//include('360webscan.php');

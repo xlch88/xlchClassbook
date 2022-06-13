@@ -19,16 +19,16 @@ return <<<FlandreStudio_JSON
         "Type": "3",
         "Id": "902200569",
         "Auto": false,
-        "Disabled": false,
+        "Disabled": true,
         "Player": 1,
         "BadApplePlayer": {
             "Key": "gcbs"
         }
     },
     "AdminInfo": {
-        "QQ": "408214421",
-        "WeChat": "xlchmz",
-        "Email": "me@qq-admin.cn"
+        "QQ": "787700998",
+        "WeChat": "ZeroDay9",
+        "Email": "dark495@moesys.cn"
     },
     "Group": {
         "QQ": "589697104",

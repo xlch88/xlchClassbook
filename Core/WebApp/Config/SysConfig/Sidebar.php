@@ -45,9 +45,9 @@ return <<<FlandreStudio_JSON
     },
     {
         "Type": 1,
-        "Icon": "question",
-        "Title": "使用教程",
-        "Url": "http:\/\/txl.xlch8.cn\/?mod=help&id=4",
+        "Icon": "github",
+        "Title": "开源地址",
+        "Url": "https://github.com/xlch88/xlchClassbook",
         "Option": []
     },
     {

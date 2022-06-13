@@ -4,7 +4,7 @@
 	<br />
 </p>
 <p>
-	<span style="font-family:Microsoft YaHei;">本程序开发者：<span style="color:#E53333;">绚丽彩虹</span>(QQ408214421)(me@qq-admin.cn)</span> 
+	<span style="font-family:Microsoft YaHei;">本程序开发者：<span style="color:#E53333;">悦咚 / Dark495</span>(QQ787700998)(dark495@moesys.cn)</span> 
 </p>
 <p>
 	<span style="font-family:Microsoft YaHei;">本程序策划者：<span style="color:#337FE5;">华梦流年</span>(QQ</span><span style="font-family:Microsoft YaHei;">1991550400</span><span style="font-family:Microsoft YaHei;">)(</span><span style="font-family:Microsoft YaHei;">me@52huameng.com</span><span style="font-family:Microsoft YaHei;">)</span> 

@@ -1,22 +1,22 @@
 <?php
 return [
 	"Public"=>[
-		"Photo"=>"http://img.badapple.top/Xlch/me/1.jpg",
+		"Photo"=>"http://q1.qlogo.cn/g?b=qq&nk=787700998&s=640",
 		"CardBg"=>0,
-		"Sign"=>"国内蹭热度第一人 大自然的父亲 不喜欢我的都是垃圾。绚丽彩虹同学录作者。\n个人博客：http://xlch.me/\n个人主页：http://i.xlch.me/\n电子名片：http://qr.xlch.me/"
+		"Sign"=>"天生万物以养人，人无一物以报天\n杀杀杀杀杀杀杀，，，"
 	],
 	"SocialAccount"=>[
-		"QQ"=>"408214421",
-		"Weibo"=>"@黑化美学",
-		"WeChat"=>"xlchmz"
+		"QQ"=>"787700998",
+		"Weibo"=>"@YueDongQwQ",
+		"WeChat"=>"ZeroDay9"
 	],
 	"MyInfo"=>[
-		"Birthday"=>"1999-2-2",
-		"Gender"=>"1",
-		"Motto"=>"不忘初心，方得始终。",
+		"Birthday"=>"2001-02-22",
+		"Gender"=>"2",
+		"Motto"=>"天生万物以养人，人无一物以报天\n杀杀杀杀杀杀杀，，，",
 		"Constellation"=>"10",
-		"Weight"=>"50",
-		"Height"=>"160",
+		"Weight"=>"NaN",
+		"Height"=>"175",
 		"Character"=>[
 			"0",
 			"14",
@@ -36,12 +36,12 @@ return [
 		"BeGoodAt"=>"撸代码、宅在家"
 	],
 	"Location"=>[
-		"Hometown"=>"中国 新疆维吾尔族自治区 伊犁 伊宁市",
-		"NowLive"=>"中国 新疆维吾尔族自治区 乌鲁木齐市",
+		"Hometown"=>"中国 阿拉花瓜省",
+		"NowLive"=>"反正不在 中国 阿拉花瓜省",
 		"ZipCode"=>"830000"
 	],
 	"ContactMe"=>[
-		"Phone"=>"17100000000",
-		"Email"=>"me@qq-admin.cn"
+		"Phone"=>"13800138000",
+		"Email"=>"dark495@moesys.cn"
 	]
 ];
