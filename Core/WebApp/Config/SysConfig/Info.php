@@ -21,7 +21,8 @@ return <<<FlandreStudio_JSON
                 "Option": [
                     "汉子",
                     "妹子",
-                    "TS/Other"
+                    "TS/Other",
+                    "武装直升机"
                 ]
             },
             {
