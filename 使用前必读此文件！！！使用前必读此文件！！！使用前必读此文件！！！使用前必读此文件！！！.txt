@@ -1,0 +1,9 @@
+本项目github地址：https://github.com/xlch88/xlchClassbook
+
+请仔细阅读README.MD文件！！！
+请仔细阅读README.MD文件！！！
+请仔细阅读README.MD文件！！！
+
+若你是从github以外的地方下载到此源码，请立刻删除，并从github下载，否则无法确保你下载到的源码的安全性。
+
+如果有问题，请学会使用github，并发起issues，不要尝试加作者的QQ！！！除非你认可付费咨询(50rmb/次)！
