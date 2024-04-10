@@ -32,9 +32,10 @@
  - 作者仍然保留版权等法律范围内允许的最大权利。
  - This software now only supports Chinese. 
  
-# 联系作者
- - 编写：悦咚   Email:dark495@moesys.cn
+# 软件作者
+ - 程序：悦咚   Email:dark495@moesys.cn
  - 策划：华梦   Email:me@52huameng.com
+ - 在初三的某节礼堂大讲座，台下无聊的策划突发奇想，在草稿纸上画下了此项目的第一张草图
 
 # 更新记录
 ### 2022-06-13 V1.5 修复版
